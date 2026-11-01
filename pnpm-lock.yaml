@@ -31,8 +31,8 @@ catalogs:
       specifier: ^5.6.3
       version: 5.9.2
     zod:
-      specifier: ^3.23.8
-      version: 3.25.76
+      specifier: ^4.6.6
+      version: 4.6.7
   react18:
     '@types/react':
       specifier: ^18.3.11
@@ -138,10 +138,10 @@ importers:
         version: 5.4.1(@lingui/babel-plugin-lingui-macro@5.4.1(typescript@5.9.2))(react@18.3.1)
       '@modelcontextprotocol/sdk':
         specifier: ^1.11.0
-        version: 1.29.0(zod@3.25.76)
+        version: 1.29.0(zod@4.6.7)
       '@t3-oss/env-nextjs':
         specifier: ^0.11.1
-        version: 0.11.1(typescript@5.9.2)(zod@3.25.76)
+        version: 0.11.1(typescript@5.9.2)(zod@4.6.7)
       '@tailwindcss/typography':
         specifier: ^0.5.16
         version: 0.5.16(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.19.11)(typescript@5.9.2)))
@@ -249,7 +249,7 @@ importers:
         version: 0.8.10(@tiptap/core@2.26.1(@tiptap/pm@2.26.1))
       zod:
         specifier: 'catalog:'
-        version: 3.25.76
+        version: 4.6.7
     devDependencies:
       '@kan/eslint-config':
         specifier: workspace:*
@@ -343,10 +343,10 @@ importers:
         version: 2.2.1
       trpc-to-openapi:
         specifier: ^2.3.2
-        version: 2.4.0(@trpc/server@11.5.0(typescript@5.9.2))(zod-openapi@4.2.4(zod@3.25.76))(zod@3.25.76)
+        version: 2.4.0(@trpc/server@11.5.0(typescript@5.9.2))(zod-openapi@4.2.4(zod@4.6.7))(zod@4.6.7)
       zod:
         specifier: 'catalog:'
-        version: 3.25.76
+        version: 4.6.7
     devDependencies:
       '@kan/eslint-config':
         specifier: workspace:*
@@ -429,7 +429,7 @@ importers:
         version: 0.42.0(@electric-sql/pglite@0.3.7)(@types/pg@8.15.5)(kysely@0.28.8)(pg@8.16.3)
       drizzle-zod:
         specifier: ^0.5.1
-        version: 0.5.1(drizzle-orm@0.42.0(@electric-sql/pglite@0.3.7)(@types/pg@8.15.5)(kysely@0.28.8)(pg@8.16.3))(zod@3.25.76)
+        version: 0.5.1(drizzle-orm@0.42.0(@electric-sql/pglite@0.3.7)(@types/pg@8.15.5)(kysely@0.28.8)(pg@8.16.3))(zod@4.6.7)
       ioredis:
         specifier: ^5.9.2
         version: 5.9.2
@@ -441,7 +441,7 @@ importers:
         version: 11.1.0
       zod:
         specifier: 'catalog:'
-        version: 3.25.76
+        version: 4.6.7
     devDependencies:
       '@kan/eslint-config':
         specifier: workspace:*
@@ -579,10 +579,10 @@ importers:
     dependencies:
       '@modelcontextprotocol/sdk':
         specifier: ^1.11.0
-        version: 1.29.0(zod@3.25.76)
+        version: 1.29.0(zod@4.6.7)
       zod:
         specifier: 'catalog:'
-        version: 3.25.76
+        version: 4.6.7
     devDependencies:
       '@kan/tsconfig':
         specifier: workspace:*
@@ -3740,10 +3740,12 @@ packages:
   '@smithy/smithy-client@4.11.2':
     resolution: {integrity: sha512-SCkGmFak/xC1n7hKRsUr6wOnBTJ3L22Qd4e8H1fQIuKTAjntwgU8lrdMe7uHdiT2mJAOWA/60qaW9tiMu69n1A==}
     engines: {node: '>=18.0.0'}
+    deprecated: Deprecated due to a bug in custom logger data redaction. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
 
   '@smithy/smithy-client@4.5.0':
     resolution: {integrity: sha512-ZSdE3vl0MuVbEwJBxSftm0J5nL/gw76xp5WF13zW9cN18MFuFXD5/LV0QD8P+sCU5bSWGyy6CTgUupE1HhOo1A==}
     engines: {node: '>=18.0.0'}
+    deprecated: Deprecated due to a bug in custom logger data redaction. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
 
   '@smithy/types@4.12.0':
     resolution: {integrity: sha512-9YcuJVTOBDjg9LWo23Qp0lTQ3D7fQsQtwle0jVfpbUHy9qBwCEgKuVH4FqFB3VYu0nwdHKiEMA+oXz7oV8X1kw==}
@@ -9101,6 +9103,9 @@ packages:
   zod@4.1.13:
     resolution: {integrity: sha512-AvvthqfqrAhNH9dnfmrfKzX5upOdjUVJYFqNSlkmGf64gRaTzlPwz99IHYnVs28qYAybvAlBV+H7pn0saFY4Ig==}
 
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
+
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
@@ -11501,7 +11506,7 @@ snapshots:
       zod: 3.25.76
       zod-to-json-schema: 3.25.2(zod@3.25.76)
 
-  '@modelcontextprotocol/sdk@1.29.0(zod@3.25.76)':
+  '@modelcontextprotocol/sdk@1.29.0(zod@4.6.7)':
     dependencies:
       '@hono/node-server': 1.19.14(hono@4.12.16)
       ajv: 8.17.1
@@ -11518,8 +11523,8 @@ snapshots:
       json-schema-typed: 8.0.2
       pkce-challenge: 5.0.1
       raw-body: 3.0.2
-      zod: 3.25.76
-      zod-to-json-schema: 3.25.2(zod@3.25.76)
+      zod: 4.6.7
+      zod-to-json-schema: 3.25.2(zod@4.6.7)
     transitivePeerDependencies:
       - supports-color
 
@@ -12554,16 +12559,16 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@t3-oss/env-core@0.11.1(typescript@5.9.2)(zod@3.25.76)':
+  '@t3-oss/env-core@0.11.1(typescript@5.9.2)(zod@4.6.7)':
     dependencies:
-      zod: 3.25.76
+      zod: 4.6.7
     optionalDependencies:
       typescript: 5.9.2
 
-  '@t3-oss/env-nextjs@0.11.1(typescript@5.9.2)(zod@3.25.76)':
+  '@t3-oss/env-nextjs@0.11.1(typescript@5.9.2)(zod@4.6.7)':
     dependencies:
-      '@t3-oss/env-core': 0.11.1(typescript@5.9.2)(zod@3.25.76)
-      zod: 3.25.76
+      '@t3-oss/env-core': 0.11.1(typescript@5.9.2)(zod@4.6.7)
+      zod: 4.6.7
     optionalDependencies:
       typescript: 5.9.2
 
@@ -14122,10 +14127,10 @@ snapshots:
       kysely: 0.28.8
       pg: 8.16.3
 
-  drizzle-zod@0.5.1(drizzle-orm@0.42.0(@electric-sql/pglite@0.3.7)(@types/pg@8.15.5)(kysely@0.28.8)(pg@8.16.3))(zod@3.25.76):
+  drizzle-zod@0.5.1(drizzle-orm@0.42.0(@electric-sql/pglite@0.3.7)(@types/pg@8.15.5)(kysely@0.28.8)(pg@8.16.3))(zod@4.6.7):
     dependencies:
       drizzle-orm: 0.42.0(@electric-sql/pglite@0.3.7)(@types/pg@8.15.5)(kysely@0.28.8)(pg@8.16.3)
-      zod: 3.25.76
+      zod: 4.6.7
 
   dunder-proto@1.0.1:
     dependencies:
@@ -18247,14 +18252,14 @@ snapshots:
 
   trough@2.2.0: {}
 
-  trpc-to-openapi@2.4.0(@trpc/server@11.5.0(typescript@5.9.2))(zod-openapi@4.2.4(zod@3.25.76))(zod@3.25.76):
+  trpc-to-openapi@2.4.0(@trpc/server@11.5.0(typescript@5.9.2))(zod-openapi@4.2.4(zod@4.6.7))(zod@4.6.7):
     dependencies:
       '@trpc/server': 11.5.0(typescript@5.9.2)
       co-body: 6.2.0
       h3: 1.15.1
       openapi3-ts: 4.4.0
-      zod: 3.25.76
-      zod-openapi: 4.2.4(zod@3.25.76)
+      zod: 4.6.7
+      zod-openapi: 4.2.4(zod@4.6.7)
     optionalDependencies:
       '@rollup/rollup-linux-x64-gnu': 4.6.1
 
@@ -18931,16 +18936,22 @@ snapshots:
 
   yoctocolors@2.1.2: {}
 
-  zod-openapi@4.2.4(zod@3.25.76):
+  zod-openapi@4.2.4(zod@4.6.7):
     dependencies:
-      zod: 3.25.76
+      zod: 4.6.7
 
   zod-to-json-schema@3.25.2(zod@3.25.76):
     dependencies:
       zod: 3.25.76
 
+  zod-to-json-schema@3.25.2(zod@4.6.7):
+    dependencies:
+      zod: 4.6.7
+
   zod@3.25.76: {}
 
   zod@4.1.13: {}
+
+  zod@4.6.7: {}
 
   zwitch@2.0.4: {}
